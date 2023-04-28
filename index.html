@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+  <title>GSAP</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box box-1" id="animate"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    </div>
+    <script>
+    // Javascript comment
+    // log a message to the console
+    // alert("hello stupid");
+    // console.log ("hello smart one");
+    // gsap
+    // gsap library, .to() method, "" selector
+    // Tween
+    // gsap.to("#animate", { duration: 1, delay:1, backgroundColor: "#ff0000"});
+    // Timeline
+    var outTimeline = gsap.timeline();
+    outTimeline.to(".box-1", { duration: 4, x: 100, rotation: 45});
+    outTimeline.to(".box-2", { duration: 4, x: 100, rotation: 45} );
+    outTimeline.to(".box-3", { duration: 4, x: 100, rotation: 45});
+    
+
+    </script>
+</body>
+</html>
